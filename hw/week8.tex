@@ -1,0 +1,500 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\usepackage{mathtools}
+
+\title{\Huge{Discrete Mathematics}\\Week 8}
+\author{\huge{Abeyah Calpatura}}
+\date{}
+
+\begin{document}
+\maketitle
+\section*{6.1}
+\subsection*{Exercises} \\
+\text{Abeyah Calpatura} \\
+\#4ab, 7ab, 8, 9, 12, 15, 20, 31 \\
+
+\noindent \textbf{\#4} \\
+\noindent Let A = $\{n \in \mathbb{Z} \mid n = 5r \: \text{for some integer r}\}$ \\
+Let B = $\{m \in \mathbb{Z} \mid m = 20s \: \text{for some integer s}\}$ \\
+$A = \{\dots, -40, -35, -30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, \dots \}$ \\
+$B = \{\dots, -100, -80, -60, -40, -20, 0, 20, 40, 60, 80, 100, \dots \}$ \\ \\
+\textbf{\#4a} 
+\sol{ $A \subseteq B$
+    \begin{align*}
+    & \text{Not true, prove that we need to find at least one element that belongs to A but not B.} \\
+    & \text{Let's take the element 5.} \\
+    & \text{5 belongs to A because 5 = 5(1).} \\
+    & \text{5 does not belong to B because 5 $\neq$ 20s for any integer s.} \\
+    & \text{Therefore, A $\nsubseteq$ B.} \\
+    \end{align*}
+}
+\textbf{\#4b} 
+\sol{ $B \subseteq A$
+    \begin{align*}
+    & \text{A is the set of all numbers divisble by 5.} \\
+    & \text{B, have all integers that are divisble by 20. } \\
+    & \text{$z \in B$ must be divisble by 4 and 5} \\
+    & \text{Therefore, B $\subseteq$ A. Every element of B also belongs to A} \\
+    \end{align*}
+} 
+\textbf{\#7} \\
+\noindent Let A = $\{x \in \mathbb{Z} \mid x = 6a + 4 \: \text{for some integer a}\}$ \\
+Let B = $\{y \in \mathbb{Z} \mid y = 18b - 2 \: \text{for some integer b}\}$ \\
+Let C = $\{z \in \mathbb{Z} \mid z = 18c + 16 \: \text{for some integer c}\}$ \\
+Prove or disprove each of the following statements. \\ \\
+\textbf{\#7a}
+\sol{ $A \subseteq B$
+    \begin{align*}
+    & \text{For a = 1, we have that $x=6\cdot 1 + 4 = 10 \in A$} \\
+    & \text{Suppose that x = 10. Solve the eqution 10 = 18b - 2} \\
+    & \text{12 = 18b} \\
+    & \text{2 = 3b} \\
+    & \text{$b = \frac{2}{3} \notin \mathbb{Z}$} \\
+    & \text{Therefore, A $\nsubseteq$ B.} \\
+    \end{align*}
+}
+\textbf{\#7b}
+\sol{ $B \subseteq A$
+    \begin{align*}
+    & \text{A is the set of all numbers that are 4 more than a multiple of 6.} \\
+    & \text{B is the set of all numbers that are 3 less than a multiple of 10.} \\
+    & \text{There is an integer b so that $x = 18b-2$} \\
+    & \text{$x= 18b - 2= 6a +4$} \\
+    & \text{$18b - 2 - 4 = 6a$} \\
+    & \text{$18b - 6 = 6a$} \\
+    & \text{$6(3b - 1) = 6a$} \\
+    & \text{$3b - 1 = a$} \\
+    & \text{Therefore, B $\subseteq$ A. Every element of B also belongs to A.} \\
+    \end{align*}
+}
+\textbf{\#8a}
+\sol{ $\{x \in U \mid x \in A \: \text{and} \: x \in B\}$
+    \begin{align*}
+    & \text{This is the set of all x from U, such that x is both in A and in B.} \\
+    & \text{Solution: $A \cap B$} \\
+    \end{align*}
+}
+\textbf{\#8b}
+\sol{ $\{x \in U \mid x \in A \: \text{or} \: x \in B\}$
+    \begin{align*}
+    & \text{This is the set of all x from U, such that x is in A or in B.} \\
+    & \text{Solution: $A \cup B$} \\
+    \end{align*}
+}
+\textbf{\#8c} 
+\sol{ $\{x \in U \mid x \in A \: \text{and} \: x \notin B\}$
+    \begin{align*}
+    & \text{This is the set of all x from U, such that x is in A and not in B.} \\
+    & \text{Solution: $A - B$} \\
+    \end{align*}
+}
+\textbf{\#8d} 
+\sol{ $\{x \in U \mid x \notin A\}$
+    \begin{align*}
+    & \text{This is the set of all x from U that do not belong to A} \\
+    & \text{Solution: $A^c$} \\
+    \end{align*}
+}
+\textbf{\#9a}
+\sol{ $x \notin A \cup B$ if, and only if, $x \notin A$ and $x \notin B$.} \\
+\textbf{\#9b}
+\sol{ $x \notin A \cap B$ if, and only if, $x \notin A$ or $x \notin B$.} \\
+\textbf{\#9c}
+\sol{ $x \in A - B$ if, and only if, $x \notin A$ and $x \in B$.} \\
+\\
+\textbf{\#12} \\
+Let the universal set be $\mathbb{R}$, the set of all real numbers, and let A = $\{x \in \mathbb{R} \mid -3 \leq x \leq 0\}$ and B = $\{x \in \mathbb{R} \mid -1 < x < 2\}$, and C = $\{x \in \mathbb{R} \mid 6 < x \leq 8\}$ \\
+\textbf{\#12a}
+\sol{ $A \cup B$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -3 \leq x \leq 0 \: \text{or} \: -1 < x < 2\} = \{x \in \mathbb{R} \mid -3 \leq x < 2\}$} \\
+    \end{align*}
+}
+\textbf{\#12b}
+\sol{ $A \cap B$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -3 \leq x \leq 0 \: \text{and} \: -1 < x < 2\} = \{x \in \mathbb{R} \mid -1 < x \leq 0\}$} \\
+    \end{align*}
+}
+\textbf{\#12c}
+\sol{ $A^c$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -3 \leq x \leq 0\}^c = \{x \in \mathbb{R} \mid x < -3 \: \text{or} \: x > 0\}$} \\
+    \end{align*}
+}
+\textbf{\#12d}
+\sol{ $A \cup C$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -3 \leq x \leq 0 \: \text{or} \: 6 < x \leq 8\} = \{x \in \mathbb{R} \mid -3 \leq x \leq 8\}$} \\
+    \end{align*}
+}
+\textbf{\#12e}
+\sol{ $A \cap C$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -3 \leq x \leq 0 \: \text{and} \: 6 < x \leq 8\} = \emptyset$} \\
+    \end{align*}
+}
+\textbf{\#12f}
+\sol{ $B^c$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -1 < x < 2\}^c = \{x \in \mathbb{R} \mid x \leq -1 \: \text{or} \: x \geq 2\}$} \\
+    \end{align*}
+}
+\textbf{\#12g}
+\sol{ $A^c \cap B^c$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid x < -3 \: \text{or} \: x > 0\} \: \text{and} \: \{x \in \mathbb{R} \mid x \leq -1 \: \text{or} \: x \geq 2\} = \{x \in \mathbb{R} \mid x < -3 \: \text{or} \: x \geq 2\}$} \\
+    \end{align*}
+}
+\textbf{\#12h}
+\sol{ $A^c \cup B^c$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid x < -3 \: \text{or} \: x > 0\} \: \text{or} \: \{x \in \mathbb{R} \mid x \leq -1 \: \text{or} \: x \geq 2\} = \{x \in \mathbb{R} \mid x < -3 \: \text{or} \: x \geq 2\}$} \\
+    \end{align*}
+}
+\textbf{\#12i}
+\sol{ $(A \cap B)^c$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -1 < x \leq 0\}^c = \{x \in \mathbb{R} \mid x \leq -1 \: \text{or} \: x > 0\}$} \\
+    \end{align*}
+}
+\textbf{\#12j}
+\sol{ $(A \cup B)^c$
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid -3 \leq x < 2\}^c = \{x \in \mathbb{R} \mid x < -3 \: \text{or} \: x \geq 2\}$} \\
+    \end{align*}
+}
+\textbf{\#15} \\
+Venn Diagram \\
+\newpage
+\noindent \textbf{\#20} \\
+Let $B_i = \{x \in \mathbb{R} \mid 0 \leq x \leq i\}$ for each integer i = 1, 2, 3, 4 \\
+\textbf{\#20a}
+\sol{ $B_1 \cup B_2 \cup B_3 \cup B_4 = $
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid 0 \leq x \leq 1\} \cup \{x \in \mathbb{R} \mid 0 \leq x \leq 2\} \cup \{x \in \mathbb{R} \mid 0 \leq x \leq 3\} \cup \{x \in \mathbb{R} \mid 0 \leq x \leq 4\}$} \\
+    & \text{$= \{x \in \mathbb{R} \mid 0 \leq x \leq 4\}$} \\
+    \end{align*}
+}
+\textbf{\#20b}
+\sol{ $B_1 \cap B_2 \cap B_3 \cap B_4 = $
+    \begin{align*}
+    & \text{$\{x \in \mathbb{R} \mid 0 \leq x \leq 1\} \cap \{x \in \mathbb{R} \mid 0 \leq x \leq 2\} \cap \{x \in \mathbb{R} \mid 0 \leq x \leq 3\} \cap \{x \in \mathbb{R} \mid 0 \leq x \leq 4\}$} \\
+    & \text{$= \{x \in \mathbb{R} \mid 0 \leq x \leq 1\}$} \\
+    \end{align*}
+}
+\textbf{\#20c}
+\sol{ Are $B_1, B_2, B_3, and B_4$ mutually disjoint? \\
+    \begin{align*}
+    & \text{No, they are not mutually disjoint.} \\
+    & \text{The intersection of any two of them is not empty.} \\
+    \end{align*}
+}
+\textbf{\#31} \\
+Suppose $A = \{1, 2\}$ and $B = \{2, 3\}$. Find each of the following \\
+\textbf{\#31a}
+\sol{ $\mathcal{P}(A \cap B)$
+    \begin{align*}
+    & \text{$A \cap B = \{2\}$} \\
+    & \text{$\mathcal{P}(A \cap B) = \{\emptyset, \{2\}\}$} \\
+    \end{align*}
+}
+\textbf{\#31b}
+\sol{ $\mathcal{P}(A)$
+    \begin{align*}
+    & \text{$\mathcal{P}(A) = \{\emptyset, \{1\}, \{2\}, \{1, 2\}\}$} \\
+    \end{align*}
+}
+\textbf{\#31c}
+\sol{ $\mathcal{P}(A \cup B)$
+    \begin{align*}
+    & \text{$A \cup B = \{1, 2, 3\}$} \\
+    & \text{$\mathcal{P}(A \cup B) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}$} \\
+    \end{align*}
+}
+\textbf{\#31d}
+\sol{ $\mathcal{P}(A \times B)$
+    \begin{align*}
+    & \text{$A \times B = \{(1, 2), (1, 3), (2, 2), (2, 3)\}$} \\
+    & \text{$\mathcal{P}(A \times B) = \{\emptyset, \{(1, 2)\}, \{(1, 3)\}, \{(2, 2)\}, \{(2, 3)\}, \{(1, 2), (1, 3)\}, \{(1, 2), (2, 2)\}$} \\ 
+    & \text{$\{(1, 2), (2, 3)\}, \{(1, 3), (2, 2)\}, \{(1, 3), (2, 3)\}, \{(2, 2), (2, 3)\}, \{(1, 2), (1, 3), (2, 2)\}, \{(1, 2), (1, 3)$} \\
+    & \text{$, (2, 3)\}, \{(1, 2), (2, 2), (2, 3)\}, \{(1, 3), (2, 2), (2, 3)\}, \{(1, 2), (1, 3), (2, 2), (2, 3)\}$} \\
+    \end{align*}
+}}
+\newpage
+\section*{7.1}
+\subsection*{Exercises} \\
+\text{Abeyah Calpatura} \\
+\#1, 2, 8cd, 11cd, 12cd, 17, 18 \\
+\textbf{\#1} \\
+Let X = $\{1, 3, 5\}$ and Y = $\{s, t, u, v\}$. Define f: $X \rightarrow Y$ \\
+\vspace{3cm} \\
+\textbf{\#1a}
+\sol{
+    \begin{align*}
+    & \text{Domain f = $\{1, 3, 5\}$} \\
+    & \text{Codomain f = $\{s, t, u, v\}$} \\
+    \end{align*}
+}
+\textbf{\#1b}
+\sol{ Find f(1), f(3), f(5)
+    \begin{align*}
+    & \text{f(1) = v} \\
+    & \text{f(3) = s} \\
+    & \text{f(5) = v} \\
+    \end{align*}
+}
+\textbf{\#1c}
+\sol{ What is the range of f?
+    \begin{align*}
+    & \text{Range f = $\{s, v\}$} \\
+    \end{align*}
+}
+\textbf{\#1d} 
+\sol{ Is 3 an inverse image of s? Is 1 an inverse image of u?
+    \begin{align*}
+    & \text{3 is an inverse image of s.} \\
+    & \text{1 is not an inverse image of u.} \\
+    \end{align*}
+}
+\textbf{\#1e}
+\sol{ What is the inverse image of s? of u? of v?
+    \begin{align*}
+    & \text{Inverse image of s = $\{3\}$} \\
+    & \text{Inverse image of u = $\emptyset$} \\
+    & \text{Inverse image of v = $\{1, 5\}$} \\
+    \end{align*}
+}
+\textbf{\#1f} 
+\sol{ Represent f as a set of ordered pairs. 
+    \begin{align*}
+    & \text{f = $\{(1, v), (3, s), (5, v)\}$} \\
+    \end{align*}
+}
+\newpage
+\noindent \textbf{\#2} \\
+Let X = $\{1, 3, 5\}$ and Y = $\{a, b, c, d\}$. Define g: $X \rightarrow Y$ \\
+\vspace{3cm} \\
+\textbf{\#2a}
+\sol{
+    \begin{align*}
+    & \text{Domain g = $\{1, 3, 5\}$} \\
+    & \text{Codomain g = $\{a, b, c, d\}$} \\
+    \end{align*}
+}
+\textbf{\#2b}
+\sol{ Find g(1), g(3), g(5)
+    \begin{align*}
+    & \text{g(1) = b} \\
+    & \text{g(3) = b} \\
+    & \text{g(5) = b} \\
+    \end{align*}
+}
+\textbf{\#2c}
+\sol{ What is the range of g?
+    \begin{align*}
+    & \text{Range g = $\{b\}$} \\
+    \end{align*}
+}
+\textbf{\#2d}
+\sol{ Is 3 an inverse image of a? Is 1 an inverse image of c?
+    \begin{align*}
+    & \text{3 is not an inverse image of a.} \\
+    & \text{1 is the inverse image of c.} \\
+    \end{align*}
+}
+\textbf{\#2e}
+\sol{ What is the inverse image of b? of c? 
+    \begin{align*}
+    & \text{Inverse image of b = $\{1, 3, 5\}$} \\
+    & \text{Inverse image of c = $\{\emptyset\}$} \\
+    \end{align*}
+}
+\textbf{\#2f}
+\sol{ Represent g as a set of ordered pairs. 
+    \begin{align*}
+    & \text{g = $\{(1, b), (3, b), (5, b)\}$} \\
+    \end{align*}
+}
+\textbf{\#8} 
+Let $J_5 = \{0, 1, 2, 3, 4\}$, and define a function $F: J_5 \rightarrow J_5$ as follows: For each $x \in J_5, F(x) = (x^3+2x+4)$ mod 5. \\
+\textbf{\#8c}
+\sol{ F(2)
+    \begin{align*}
+    & \text{F(2) = $(2^3 + 2(2) + 4)$ mod 5} \\
+    & \text{F(2) = 16 mod 5} \\
+    & \text{F(2) = 1} \\
+    \end{align*}
+}
+\textbf{\#8d}
+\sol{ F(3)
+    \begin{align*}
+    & \text{F(3) = $(3^3 + 2(3) + 4)$ mod 5} \\
+    & \text{F(3) = 37 mod 5} \\
+    & \text{F(3) = 2} \\
+    \end{align*}
+}
+\textbf{\#11} 
+Let $F: \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z}$ as follows: For every ordered pair (a, b) of integers, $F(a, b) = (2a+1, 3b-2)$. \\
+\textbf{\#11c}
+\sol{ F(3, 2)
+    \begin{align*}
+    & \text{F(3, 2) = $(2(3) + 1, 3(2) - 2)$} \\
+    & \text{F(3, 2) = (7, 4)} \\
+    \end{align*}
+}
+\textbf{\#11d}
+\sol{ F(1, 5)
+    \begin{align*}
+    & \text{F(1, 5) = $(2(1) + 1, 3(5) - 2)$} \\
+    & \text{F(1, 5) = (3, 13)} \\
+    \end{align*}
+}
+\textbf{\#12}
+Let $J_5={0, 1, 2, 3, 4}$ and define $G: J_5 \times J_5 \rightarrow J_5 \times J_5$ as follows: For each (a, b) $\in J_5 \times J_5$, \\
+$G(a, b) = ((2a+1) \:\text{mod}\: 5, (3b-2) \:\text{mod}\: 5)$
+\textbf{\#12c}
+\sol{ G(3, 2)
+    \begin{align*}
+    & \text{G(3, 2) = $((2(3) + 1) \:\text{mod}\: 5, (3(2) - 2) \:\text{mod}\: 5)$} \\
+    & \text{G(3, 2) = $(7 \:\text{mod}\: 5, 4 \:\text{mod}\: 5)$} \\
+    & \text{G(3, 2) = (2, 4)} \\
+    \end{align*}
+}
+\textbf{\#12d}
+\sol{ G(1, 5)
+    \begin{align*}
+    & \text{G(1, 5) = $((2(1) + 1) \:\text{mod}\: 5, (3(5) - 2) \:\text{mod}\: 5)$} \\
+    & \text{G(1, 5) = $(3 \:\text{mod}\: 5, 13 \:\text{mod}\: 5)$} \\
+    & \text{G(1, 5) = (3, 3)} \\
+    \end{align*}
+}
+\textbf{\#17a}
+\sol{ log$_2$ 8
+    \begin{align*}
+    & \text{log$_2$ 8 = 3} \\
+    & \text{2$^3$ = 8} \\
+    \end{align*}
+}
+\textbf{\#17b}
+\sol{log$_5(\frac{1}{25})$ = -2
+    \begin{align*}
+    & \text{log$_5(\frac{1}{25})$ = -2} \\
+    & \text{5$^{-2}$ = $\frac{1}{25}$} \\
+    \end{align*}
+}
+\textbf{\#17c}
+\sol{ log$_4$4=1
+    \begin{align*}
+    & \text{log$_4$4 = 1} \\
+    & \text{4$^1$ = 4} \\
+    \end{align*}
+}
+\textbf{\#17d}
+\sol{ log$_3(3^n)$ = n
+    \begin{align*}
+    & \text{log$_3(3^n)$ = n} \\
+    & \text{3$^n$ = 3$^n$} \\
+    \end{align*}    
+}
+\textbf{\#17e}
+\sol{ log$_4$1 = 0
+    \begin{align*}
+    & \text{log$_4$1 = 0} \\
+    & \text{4$^0$ = 1} \\
+    \end{align*}
+}
+\textbf{\#18a}
+\sol{log$_3$81
+    \begin{align*}
+    & \text{log$_3$81 = 4} \\
+    & \text{3$^4$ = 81} \\
+    \end{align*}
+}
+\textbf{\#18b}
+\sol{log$_2$1024
+    \begin{align*}
+    & \text{log$_2$1024 = 10} \\
+    & \text{2$^{10}$ = 1024} \\
+    \end{align*}
+}
+\textbf{\#18c}
+\sol{log$_3$$(\frac{1}{27})$
+    \begin{align*}
+    & \text{log$_3$$(\frac{1}{27})$ = -3} \\
+    & \text{3$^{-3}$ = $\frac{1}{27}$} \\
+    \end{align*}
+}
+\textbf{\#18d}
+\sol{log$_2$1
+    \begin{align*}
+    & \text{log$_2$1 = 0} \\
+    & \text{2$^0$ = 1} \\
+    \end{align*}
+}
+\textbf{\#18e}
+\sol{log$_10(\frac{1}{10})$
+    \begin{align*}
+    & \text{log$_10(\frac{1}{10})$ = -1} \\
+    & \text{10$^{-1}$ = $\frac{1}{10}$} \\
+    \end{align*}
+}
+\textbf{\#18f}
+\sol{log$_2(2^k)$
+    \begin{align*}
+    & \text{log$_2(2^k)$ = k} \\
+    & \text{2$^k$ = 2$^k$} \\
+    \end{align*}
+}
+\newpage
+\section*{7.2}
+\subsection*{Exercises} \\
+\text{Abeyah Calpatura} \\
+\#1, 7, 8, 10, 17, 24, 25 \\
+
+\textbf{\#1a} 
+\sol{ A funtion F is one-to-one if, and only if, each element in the co-domain of F is the image of at \textbf{most} one element in the domain of F.}
+\textbf{\#1b}
+\sol{ A function F is onto if, and only if, each element in the co-domain of F is the image of \textbf{at least} one element in the domain of F.}
+\textbf{\#7}
+Let X = $\{a, b, c, d\}$ and Y = $\{e, f, g\}$. Define functions F and G by arrow diagrams\\
+\vspace{6cm} \\
+\textbf{\#7a}
+\sol{ Is F one-to-one? Why or why not? Is it onto? Why or why not?
+    \begin{align*}
+    & \text{F is not one-to-one because the element b is the image of both a and c.} \\
+    & \text{F is onto because each element in the co-domain is the image of at least one element in the domain.} \\
+    \end{align*}
+}
+\textbf{\#7b}
+\sol{ Is G one-to-one? Why or why not? Is it onto? Why or why not?
+    \begin{align*}
+    & \text{G is one-to-one because each element in the co-domain is the image of at most one element in the domain.} \\
+    & \text{G is not onto because the element g is not the image of any element in the domain.} \\
+    \end{align*}
+}
+\textbf{\#8}
+Let X = $\{a, b, c\}$ and Y = $\{d, e, f, g\}$. Define functions H and K by arrow diagrams\\
+\vspace{6cm} \\
+\textbf{\#8a}
+\sol{ Is H one-to-one? Why or why not? Is it onto? Why or why not?
+    \begin{align*}
+    & \text{H is neither one to one nor onto.} \\
+    & \text{H(b) = H(c) = y so H is not one to one} \\
+    & \text{H never takes the value of x, so it is not onto} \\
+    \end{align*}
+}
+\textbf{\#8b}
+\sol{ Is K one-to-one? Why or why not? Is it onto? Why or why not?
+    \begin{align*}
+    & \text{K is one-to-one but not onto.} \\
+    & \text{K takes three different values on the tree elements of X, so it is one-to-one.} \\
+    & \text{K never takes the value of z, so it is not onto.} \\
+    \end{align*}
+}
+\textbf{\#10}
+\end{document}
