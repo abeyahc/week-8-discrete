@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1711474691 "/Users/abeyahc/Documents/Discrete Math/Notes Latex/week 8/week-8-discrete/hw/week8.tex" "week8.pdf" "week8" 1711474693 2
-  "/Users/abeyahc/Documents/Discrete Math/Notes Latex/week 8/week-8-discrete/hw/week8.tex" 1711474690 18940 b60a6ddbf5e14d2b18495fbe7b73f3ba ""
+["pdflatex"] 1711474805 "/Users/abeyahc/Documents/Discrete Math/Notes Latex/week 8/week-8-discrete/hw/week8.tex" "week8.pdf" "week8" 1711474807 2
+  "/Users/abeyahc/Documents/Discrete Math/Notes Latex/week 8/week-8-discrete/hw/week8.tex" 1711474804 18950 9a915a1d1741334480f6c90f9f3523d1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -271,8 +271,8 @@
   "letterfonts.tex" 1711471960 8524 300377c5f733ebe6aa4b7f8e56db5921 ""
   "macros.tex" 1711471960 3389 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1711471960 20053 cac64cd8837854e12008c40220fda887 ""
-  "week8.aux" 1711474693 677 d1bb9a0f5ed1ac5a003c4e5a73534086 "pdflatex"
-  "week8.tex" 1711474690 18940 b60a6ddbf5e14d2b18495fbe7b73f3ba ""
+  "week8.aux" 1711474807 677 d1bb9a0f5ed1ac5a003c4e5a73534086 "pdflatex"
+  "week8.tex" 1711474804 18950 9a915a1d1741334480f6c90f9f3523d1 ""
   (generated)
   "week8.aux"
   "week8.log"

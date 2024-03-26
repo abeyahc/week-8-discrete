@@ -1383,6 +1383,9 @@ INPUT ./letterfonts.tex
 INPUT ./letterfonts.tex
 INPUT letterfonts.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT ./week8.aux
+INPUT week8.aux
+INPUT week8.aux
 OUTPUT week8.aux
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/omlnpxmi.fd
