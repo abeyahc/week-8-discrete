@@ -99,7 +99,7 @@ Prove or disprove each of the following statements. \\ \\
     & \text{Solution: $A^c$} \\
     \end{align*}
 }
-\textbf{\#9a}
+\noindent \textbf{\#9a}
 \sol{ $x \notin A \cup B$ if, and only if, $x \notin A$ and $x \notin B$.} \\
 \textbf{\#9b}
 \sol{ $x \notin A \cap B$ if, and only if, $x \notin A$ or $x \notin B$.} \\
@@ -439,7 +439,7 @@ $G(a, b) = ((2a+1) \:\text{mod}\: 5, (3b-2) \:\text{mod}\: 5)$
 \textbf{\#18e}
 \sol{log$_10(\frac{1}{10})$
     \begin{align*}
-    & \text{log$_10(\frac{1}{10})$ = -1} \\
+    & \text{log$_{10}(\frac{1}{10})$ = -1} \\
     & \text{10$^{-1}$ = $\frac{1}{10}$} \\
     \end{align*}
 }
@@ -496,5 +496,84 @@ Let X = $\{a, b, c\}$ and Y = $\{d, e, f, g\}$. Define functions H and K by arro
     & \text{K never takes the value of z, so it is not onto.} \\
     \end{align*}
 }
-\textbf{\#10}
+\noindent \textbf{\#10}
+Define g: $\mathbb{Z} \rightarrow \mathbb{Z}$ by f(n) = 2n. For every integer n. \\
+\textbf{\#10a}
+\sol{ \\ (i) is f one to one? Prove or give a counter example. 
+    \begin{align*}
+    & \text{Let $x, y \in \mathbb{Z}$ such that x and y have the same image} \\
+    & \text{2x = 2y} \\
+    & \text{x = y} \\
+    & \text{Therefore, f is one-to-one.} \\
+    \end{align*}
+    (ii) is f onto? Prove or give a counter example.
+    \begin{align*}
+    & \text{$3 \in \mathbb{Z}$} \\
+    & \text{3 is not the image of any integer because it's not even.} \\
+    & \text{Therefore, f is not onto if 3 is not the image of any integer while 3 is in the codomain.} \\
+    \end{align*}
+}
+\textbf{\#10b} 
+\sol{
+    \begin{align*}
+        & \text{Let $n \in 2\mathbb{Z}$. Find an element in the domain $\mathbb{Z}$ that has n as its image} \\
+        & \text{Let $n = 2k$ for some integer k} \\
+        & \text{f(k) = 2k = n} \\
+        & \text{Therefore, f is onto.} \\
+        \end{align*}
+}
+\textbf{\#17}
+\sol{
+    $f(x) = \frac{3x-1}{x}$, for each real number $x \neq 0$.
+Determine whether or not if f is one-to-one.
+    \begin{align*}
+    & \text{Let $x_1, x_2 \in \mathbb{R}$ such that $f(x_1) = f(x_2)$} \\
+    & \text{$\frac{ex_1-1}{x_1} = \frac{ex_2-1}{x_2}$} \\
+    & \text{$3x_1x_2 - x_1 = 3x_1x_2 - x_2$} \\
+    & \text{$x_1 = x_2$} \\
+    & \text{Therefore, f is one-to-one.} \\
+    \end{align*}
+}
+\newpage
+\noindent \textbf{\#24}
+Let S be the set of all strings of a's and b's, and define $N : S \rightarrow \mathbb{Z}$ by \\
+$N(s)$ = the number of a's in the string s, for each $s \in S$ \\
+\textbf{\#24a}
+\sol{ Is N one-to-one? Prove or give a counterexample. 
+    \begin{align*}
+    & \text{Let $s_1, s_2 \in S$ such that $N(s_1) = N(s_2)$} \\
+    & \text{Let $s_1 = aab$ and $s_2 = aba$} \\
+    & \text{N($s_1$) = 2 and N($s_2$) = 2} \\
+    & \text{Therefore, N is not one-to-one.} \\
+    \end{align*}
+}
+\textbf{\#24b}
+\sol{ Is N onto? Prove or give a counterexample. 
+    \begin{align*}
+    & \text{Not onto.} \\
+    & \text{Any string will either 0 a's or a positve number of a's} \\
+    & \text{N(s) cannot take on negative values. Therefore, N is not onto.} \\
+    \end{align*}
+
+}
+\textbf{\#25}
+Let S be the set of all strings in a's and b's, and define $C: S \rightarrow S$ by \\
+$C(s) = as$, for each $s \in S$ \\
+\textbf{\#25a}
+\sol{Is S one-to-one? Prove or give a counterexample 
+    \begin{align*}
+    & \text{If two strings are different, adding the letter a at the beginning still means they are different.} \\
+    & \text{Therefore, C is one-to-one.} \\
+    \end{align*}
+}
+\textbf{\#25b}
+\sol{Is S onto? Prove or give a counterexample 
+    \begin{align*}
+    & \text{Not onto.} \\
+    & \text{Every element in the image of C starts with a} \\
+    & \text{C(s) can never equal b, as the string b does not start with an a.} \\
+    & \text{Therefore, C is not onto.}
+    \end{align*}
+}
+
 \end{document}
